@@ -10,11 +10,15 @@
 </head>
 <body>
     <header>
-        <p1>Tummy Time Toy</p1>
-
-        
+        <div> 
+            <p1>Tummy Time Toy</p1>
+        </div>
     </header>
-        
+    
+    <div style="text-align: center; position: relative">
+        <img src="./static/tummy_baby.png" width="300" height="300">
+    </div>
+
     <div>
         <form id="nameform">
             <label for="fname">Default Height:</label>
@@ -33,12 +37,23 @@
     <div id = "spacer">   
 
     </div>
-    
+
     <div>
     <button onclick="getStart()">Start</button>
     <button onclick="stop()">Stop</button>
     </div>
 
+    </div>
+
+    <div id = "spacer">   
+
+    </div>
+
+
+    <div>
+        <button onclick="get_status()">Status</button>
+    </div>
+    
     <div id="footer"> <p>This is a local server.</p> </div>
 </body>
 </html>

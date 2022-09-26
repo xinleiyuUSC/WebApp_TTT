@@ -25,6 +25,10 @@ def set_program():
     para4 = request.args.get('inTime')
     return pose.set_up(para1, para2, para3, para4)
 
+@app.route('/status', methods=['GET'])
+def status_program():
+    return pose.status()
+
 
 if __name__ == "__main__":
     app.run(debug=True)
