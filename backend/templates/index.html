@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/index.css">
+    <script src="./static/index.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,9 +16,29 @@
     </header>
         
     <div>
+        <form id="nameform">
+            <label for="fname">Default Height:</label>
+            <input type="text" id="input1" name="fname"><br><br>
+            <label for="lname">Default Time:</label>
+            <input type="text" id="input2" name="lname"><br><br>
+            <label for="fname">Increment Height:</label>
+            <input type="text" id="input3" name="fname"><br><br>
+            <label for="lname">Increment Time:</label>
+            <input type="text" id="input4" name="lname">
+        </form>
 
+        <button type="submit" form="nameform" value="Submit" onclick="myFunction()">Submit</button>
     </div>
 
-    <footer>This is a local server.</footer>
+    <div id = "spacer">   
+
+    </div>
+    
+    <div>
+    <button onclick="getStart()">Start</button>
+    <button onclick="stop()">Stop</button>
+    </div>
+
+    <div id="footer"> <p>This is a local server.</p> </div>
 </body>
 </html>
