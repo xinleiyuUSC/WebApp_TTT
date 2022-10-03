@@ -7,15 +7,16 @@ def start():
     print("Program start")
     return jsonify ("program start")
 
-def set_up(height,time, in_height, in_time):
-    print("\n\nyour paremeter set as "+ height + time+"......")
-    return jsonify("Your program is set as " + height + time)
+def set_up(time, in_height, in_time):
+    print("\n\nyour paremeter set as " + time+"......")
+    return jsonify("Your program is set as "  + time)
 
 
 def stop():
     global program_status
     program_status = "OFF"
     print("Program stopped")
+    return jsonify("Your program is stopped")
 
 #add duration and activate count etc. 
 def status(): 

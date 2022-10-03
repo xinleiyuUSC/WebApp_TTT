@@ -19,11 +19,10 @@ def stop_program():
 
 @app.route('/set', methods=['GET'])
 def set_program():
-    para1 = request.args.get('height')
-    para2 = request.args.get('time')
-    para3 = request.args.get('inHeight')
-    para4 = request.args.get('inTime')
-    return pose.set_up(para1, para2, para3, para4)
+    para1 = request.args.get('time')
+    para2 = request.args.get('inHeight')
+    para3 = request.args.get('inTime')
+    return pose.set_up(para1, para2, para3)
 
 @app.route('/status', methods=['GET'])
 def status_program():

@@ -20,29 +20,34 @@
     </div>
 
     <div>
-        <form id="nameform">
-            <label for="fname">Default Height:</label>
-            <input type="text" id="input1" name="fname"><br><br>
+        <form id="nameform"  onsubmit="return validateForm()">
             <label for="lname">Default Time:</label>
-            <input type="text" id="input2" name="lname"><br><br>
+            <input type="text" id="input2" name="lname" required><br><br>
             <label for="fname">Increment Height:</label>
-            <input type="text" id="input3" name="fname"><br><br>
+            <input type="text" id="input3" name="fname" required><br><br>
             <label for="lname">Increment Time:</label>
-            <input type="text" id="input4" name="lname">
+            <input type="text" id="input4" name="lname" required>
         </form>
 
         <button type="submit" form="nameform" value="Submit" onclick="myFunction()">Submit</button>
+
+        <p>Instruction:<br> 1. Enter numbers in three input fields.<br> 2. Hit Sumbit Button.<br> 3. Hit Start button then the toy will calculate the average height. Once average height is calculated, the toy will be activated.<br> 4. To stop the toy, hit the stop button.</p>
     </div>
 
     <div id = "spacer">   
 
     </div>
 
+
     <div>
-    <button onclick="getStart()">Start</button>
-    <button onclick="stop()">Stop</button>
+        <button onclick="getStart()">Start</button>
+        <button onclick="stop()">Stop</button>
     </div>
 
+
+    <div>
+        <p id="start_height_calculating">Calculating average height for two minutes, this message will be gone when the Calculating is finished</p>
+        <p id="Toy_Activate_message">Toy is activated!</p>
     </div>
 
     <div id = "spacer">   
@@ -54,6 +59,6 @@
         <button onclick="get_status()">Status</button>
     </div>
     
-    <div id="footer"> <p>This is a local server.</p> </div>
+    <div id="footer"> <a href="https://sites.usc.edu/mdl/">Learn More@MDL</a>  </div>
 </body>
 </html>
